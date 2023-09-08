@@ -20,8 +20,6 @@ For now, continue by selecting "Start Trial". This will open a small survey to b
 
 The trial tenant will open with a Guided Tour. Please walk through the tour to start understanding the context of SAP Landscape Management Cloud. 
 
-https://99c51a2b-lmc.lama.cloud.sap/#/discoveryPortal/systems
-
 ## Create your 90 day trial of SAP 
 
 ## Summary
