@@ -31,11 +31,7 @@ At any point in time when walking through the exercises, feel free to provide fe
 
 - [Getting Started](exercises/ex0/)
 - [Exercise 1 - Get to know SAP Landscape Management Cloud](exercises/ex1/)
-    - [Exercise 1.1 - Exercise 1 Sub Exercise 1 Description](exercises/ex1#exercise-11-sub-exercise-1-description)
-    - [Exercise 1.2 - Exercise 1 Sub Exercise 2 Description](exercises/ex1#exercise-12-sub-exercise-2-description)
 - [Exercise 2 - Automate landscape activities and save infrastructure costs](exercises/ex2/)
-    - [Exercise 2.1 - Exercise 2 Sub Exercise 1 Description](exercises/ex2#exercise-21-sub-exercise-1-description)
-    - [Exercise 2.2 - Exercise 2 Sub Exercise 2 Description](exercises/ex2#exercise-22-sub-exercise-2-description)
 - [Exercise 3 - Setup alerts for unforseen situations](exercises/ex3/)
 - [Exercise 4 - Create scripts to trigger landscape management tasks](exercises/ex4/)
 - [Exercise 5 - Outlook: Event-driven infrastructure automation with CloudEvents](exercises/ex4/)
