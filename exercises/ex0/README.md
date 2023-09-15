@@ -25,7 +25,9 @@ The trial tenant will open with a Guided Tour. Please walk through the tour to s
 1. Visit [https://www.sap.com/products/technology-platform/pricing.html](https://www.sap.com/products/technology-platform/pricing.html) and select `Start your free 90-day trial`.
 2. Select `Click here to start your trial!` in the pop-up.
 3. Complete the following wizard which might require you to enter your mobile number.
-4. 
+4. As region, select "Singapore" on Microsoft Azure and wait for the wizard to finalize the setup of your SAP BTP trial account.
+
+
 
 ## Summary
 

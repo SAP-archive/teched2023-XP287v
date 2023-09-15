@@ -71,4 +71,4 @@ Here is what you can find for these three dimensions.
 
 🎉 Congratulations! You've now applied patterns to system groups to reduce infrastructure cost and analyzed how much you can actually save. 
 
-Continue to - [Exercise 3 - Excercise 3 ](../ex3/README.md)
+Continue to - [Exercise 3 - Setup alerts for unforseen situations](../ex3/README.md)
