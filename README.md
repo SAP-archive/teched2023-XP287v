@@ -34,7 +34,7 @@ At any point in time when walking through the exercises, feel free to provide fe
 - [Exercise 2 - Automate landscape activities and save infrastructure costs](exercises/ex2/)
 - [Exercise 3 - Setup alerts for unforseen situations](exercises/ex3/)
 - [Exercise 4 - Create scripts to trigger landscape management tasks](exercises/ex4/)
-- [Exercise 5 - Outlook: Event-driven infrastructure automation](exercises/ex4/)
+- [Exercise 5 - Outlook: Event-driven infrastructure automation](exercises/ex5/)
 
 
 **IMPORTANT**
