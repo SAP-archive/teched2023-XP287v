@@ -55,7 +55,7 @@ token_url = 'https://<yourSubdomain.authentication.eu10.hana.ondemand.com/oauth/
 ```
 
 7. Save the file.
-8. Go back to the "samples" folder, select all containing files and create a ZIP archive. The zip file needs to be created such that the server.py is at the top level.
+8. Go back to the "samples" folder, select all containing files and create a ZIP archive. The zip file needs to be created such that the "server.py" is at the top level.
    
 
 ## Exercise 4.4 Push the application to the SAP BTP, Cloud Foundry runtime in your trial account
@@ -71,11 +71,24 @@ After this exercise, you will have deployed the python app to the space inside y
 7. For the "Manifest Location", select `Browse...` and navigate to the file "manifest.yml" in the same folder as the sample. 
 8. Select `Deploy`. 
 
+After the deployment is finished, you need to create an external route so that you can try the app.
+
+9. In the left navigation, select `Rountes`.
+10. Select `New Route`.
+11. As "Domain", select `cfapps.ap21.hana.ondemand.com`.
+12. Pick any host name, e.g. `myapp-<yourname>` and keep the "Path" field empty.
+13. Select `Save`. 
+14. At the "Actions" column, select `Map Route`.
+15. In the drop down list, select your app and select `Save`. 
+
 ## Exercise 4.5 Try it out
 
 After following these steps, you can fetch a list of managed SAP systems in a browser window via the REST API endpoints of SAP Landscape Management Cloud.
 
-TO DO
+1. Try out the externally exposed app by opening [https://myapp-<yourname>.cfapps.ap21.hana.ondemand.com](https://myapp-<yourname>.cfapps.ap21.hana.ondemand.com) which should show "Hello World!".
+2. Try fetching all managed systems by opening [https://myapp-teched.cfapps.ap21.hana.ondemand.com/api/v1/systems](https://myapp-teched.cfapps.ap21.hana.ondemand.com/api/v1/systems).
+
+This will list the GET call to your tenant of SAP Landscape Management Cloud.
 
 # Outlook
 
