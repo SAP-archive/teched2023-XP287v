@@ -18,22 +18,22 @@ At the end of the session, you will understand how SAP Landscape Management Clou
 
 The requirements to follow the exercises in this repository are:
 
-- Having an SAP account which you can create at the top right via ![Account icon](/assets/account-icon.png) of [www.sap.com](www.sap.com)
-- Having a 30 day [free trial account of SAP Landscape Management Cloud](https://www.sap.com/products/technology-platform/landscape-management/trial.html)
-- Having a 90 day [free trial account of SAP Business Technology Platform](https://www.sap.com/products/technology-platform/pricing.html)
+- Having a free SAP-account which you can create at the top right via ![Account icon](/assets/account-icon.png) of [www.sap.com](https://www.sap.com)
+- Having a 30 day [free trial account of SAP Landscape Management Cloud](https://www.sap.com/products/technology-platform/landscape-management/trial.html) which takes around 5 minutes to provision
+- Having a 90 day [free trial account of SAP Business Technology Platform](https://www.sap.com/products/technology-platform/pricing.html) which takes around 5 minutes to provision
 
 For following the tasks, no particular knowledge in any programming language is required. Scripts will use Python as programming language and deploy these within the SAP BTP, Cloud Foundry runtime, but you will be taken through the exercises step by step.
 
 ## Providing feedback and asking questions
 
-At any point in time when walking through the exercises, feel free to provide feedback and ask questions. You can use the GitHub Issues and inside SAP Landscape Management Cloud, you can use the "Give Feedback" ![Give Feedback icon](/assets/give-feedback.png) icon located at the top right of the shell bar.
+At any point in time when walking through the exercises, feel free to provide feedback and ask questions. You can use the GitHub Issues for any topic around this tutorial. For Product feedback, you can use the "Give Feedback" ![Give Feedback icon](/assets/give-feedback.png) icon inside SAP Landscape Management Cloud which is located at the top right of the shell bar. This will be reviewed by our product management and user experience experts.
 
 ## Exercises
 
 - [Getting Started](exercises/ex0/)
 - [Exercise 1 - Get to know SAP Landscape Management Cloud](exercises/ex1/)
 - [Exercise 2 - Automate landscape activities and save infrastructure costs](exercises/ex2/)
-- [Exercise 3 - Setup alerts for unforseen situations](exercises/ex3/)
+- [Exercise 3 - Setup alerts for unforeseen situations](exercises/ex3/)
 - [Exercise 4 - Create scripts to trigger landscape management tasks](exercises/ex4/)
 - [Exercise 5 - Outlook: Event-driven infrastructure automation](exercises/ex5/)
 
