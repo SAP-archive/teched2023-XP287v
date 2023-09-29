@@ -8,19 +8,19 @@ In this exercise, you will connect SAP Landscape Management Cloud with SAP Alert
 
 Therefore, you will setup an instance of SAP Alert Notification Service, generate credentials, and add them to SAP Landscape Management Cloud. This will allow you to forward the business events for triggering an action.
 
-## Exercise 3.1 Discover business events of SAP Landscape Management Cloud
+## Exercise 3.1 Get familiar with business events of SAP Landscape Management Cloud
 
-After completing these steps, you will know about the business events SAP Landscape Management Cloud can emit. Events are standardized messages the help shifting from tightly coupled point-to-point integrations towards loosely coupled event-based integrations supports a reduction in this integration complexity. SAP Landscape Management Cloud can generate events in case activities are executed, finished, or failed when it comes to starting, stoping, and discovering new SAP systems in the connected IaaS accounts. 
+After completing these steps, you will know about the business events SAP Landscape Management Cloud can emit. Events are standardized messages that help shifting from tightly coupled point-to-point integrations towards loosely coupled event-based integrations supports a reduction in this integration complexity. SAP Landscape Management Cloud can generate events in case activities are executed, finished, or failed when it comes to starting, stopping, and discovering new SAP systems in the connected IaaS accounts. 
 
 Review the available [SAP Landscape Management Cloud operation events](https://api.sap.com/package/SAPLandscapeManagementCloudBusinessEvents/event) in the SAP Business Accelerator Hub before continuing the following exercise steps.
 
 1. Select `Operations Events`.
 2. Select the tab `Event References`.
-3. You can find the three available business events at the left side. All refer to an activity triggered from within SAP Landscape Management Cloud:
+3. You can find the three available business events at the left side. All refer to an activity triggered within SAP Landscape Management Cloud:
 
    - "ce/sap/lmc/Activity/STARTSERVICE/v1": A system is being started.
    - "ce/sap/lmc/Activity/STOPSERVICE/v1": A system is being stopped. 
-   - "ce/sap/lmc/Activity/DISCOVERY/v1": SAP Landscape Management Cloud checks the hyperscaler accounts for new systems to manage.
+   - "ce/sap/lmc/Activity/DISCOVERY/v1": SAP Landscape Management Cloud checks the Hyperscaler accounts for new systems to manage.
 
 4. Expand the `Payload` area in the grey box to find the information which is sent with each event. Besides the "activityId" for a later use in combination with the REST API endpoints, the "status" field is very relevant. This indicates if the respective activity has just started **executing**, **successfull**y finished, or **failed**.
 
@@ -38,10 +38,11 @@ After completing these steps, you will have setup an instance of SAP Alert Notif
 8. Provide an instance name e.g. "ansForLama" and select `Next`.
 
 Now that you've create a service instance, lets continue by generating a service key:
+
 9. Select `Instances and Subscriptions` in the left navigation.
-10. In the area "Instances", select the entry for Alert Notification, e.g. `ansforlama`.
+10. In the area "Instances", select the line item for Alert Notification, e.g. `ansforlama` (not yet the link of that row).
 11. On the right side, select `create` in the lower section titled "Service Keys".
-12. Provide a binding name, e.g. "ansbinding".
+12. Provide a "Service Key Name", e.g. `ansbinding`.
 13. Select `Create`.
 
 Now you can see your created binding in the table. When you select the entry you will see a JSON similar to this one:
@@ -57,7 +58,7 @@ Now you can see your created binding in the table. When you select the entry you
 
 14. Select `Download` to keep them for later.
 
-## Exercise 3.3 Enable SAP Landscape Management Cloud to emit events to SAP Alert Notificaiton Service
+## Exercise 3.3 Enable SAP Landscape Management Cloud to emit events to SAP Alert Notification Service
 
 After completing these steps, SAP Landscape Management Cloud will be able to send events to SAP Alert Notification Service.
 
@@ -73,6 +74,6 @@ https://help.sap.com/docs/alert-notification/sap-alert-notification-for-sap-btp/
 
 ## Summary
 
-🎉 Congratulations! You've now 
+🎉 Congratulations! Now you've have setup alerts for unforeseen situations.
 
 Continue to - [Exercise 4 - Create scripts to trigger landscape management tasks](../ex4/README.md)

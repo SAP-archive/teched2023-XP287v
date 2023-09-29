@@ -14,18 +14,16 @@ After completing these steps you will have a trial account of SAP Landscape Mana
 4. On the following page, select `Start your 30-day free trial`.
 5. Once you see the "Congratulations" message, select `Click here to start your trial!`
 
-This will create your trial tenant of SAP Landscape Management Cloud and afterwards open the onboarding wizard for the solution. As SAP Landscape Management Cloud is a software as a service (SaaS) solution to manage SAP systems in infrastructure as a service (IaaS) environments, you need to start by onboarding the IaaS account with certain permissions, policies, and credentials. In the trial environment, users can provide any details and no real IaaS account is required. If you plan on using SAP Landscape Management Cloud for your system landscape, the [Onboarding guide](https://help.sap.com/docs/SAP_LANDSCAPE_MANAGEMENT_CLOUD/e89209f1566d4a7aaf0631e1a1755653/fea7f79059bd42e5b6e76bcd9a07ba51.html?locale=en-US) describes all necessary steps and prerequisites.
+This will create your trial tenant of SAP Landscape Management Cloud and afterwards open the onboarding wizard for the solution. As SAP Landscape Management Cloud is a software-as-a-service (SaaS) solution to manage SAP systems in infrastructure-as-a-service (IaaS) environments, you need to start by onboarding the IaaS account with certain permissions, policies, and credentials. In the trial environment, users can provide any details and no real IaaS account is required. If you plan on using SAP Landscape Management Cloud for your system landscape, the [Onboarding guide](https://help.sap.com/docs/SAP_LANDSCAPE_MANAGEMENT_CLOUD/e89209f1566d4a7aaf0631e1a1755653/fea7f79059bd42e5b6e76bcd9a07ba51.html?locale=en-US) describes all necessary steps and prerequisites.
 
 For now, continue by selecting `Start Trial`. This will open a small survey to better understand your role in the organization. At its end, you can watch a solution overview video or skip it as we will discover the solution as part of the exercises. 
 
-### Get to know SAP Landscape Management Cloud
-
-The trial tenant will open with a Guided Tour. Please walk through the tour to start understanding the context of SAP Landscape Management Cloud. 
+The trial tenant will open with a Guided Tour which you can skip. This will be part of exercise 1.
 
 ## Create your 90-day trial of SAP Business Technology Platform
 
 1. Visit [https://www.sap.com/products/technology-platform/pricing.html](https://www.sap.com/products/technology-platform/pricing.html) 
-2. Ensure you are still logged-on with your SAP account. If you are not, logon via ![Account icon](/assets/account-icon.png) at the top right. 
+2. Ensure you are still logged-on with your SAP account. If you are not, log on via ![Account icon](/assets/account-icon.png) at the top right. 
 3. Select `Start your free 90-day trial`.
 4. Select `Click here to start your trial!` in the pop-up.
 5. Complete the following wizard which might require you to enter your mobile number.

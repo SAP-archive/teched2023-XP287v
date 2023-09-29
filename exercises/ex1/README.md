@@ -12,15 +12,15 @@ After completing these steps you will have added SAP solutions to the active man
 2. In the navigation to the left, select `Home`. You will see a dashboard with hardly any content. The only thing you can see on the right is that one cloud provider account has been added for "Amazon Web Services". This is due to the fact that no SAP systems have been added for active management.
 3. Under "Configuration", select `Discovery Portal`. This section shows you the SAP systems which were discovered by SAP Landscape Management Cloud. In the table you can see which solutions are manageable. 
 4. Use the `>` arrow at the left of a line item to expand the details of a system. You can find information about the application servers and the underlying system databases in that view. 
-5. Selecting `...` at the right of a line item shows even more details of a system to the right.
+5. Selecting `>` at the right of a line item shows even more details of a system to the right.
 6. Now select all discovered systems whose name starts with a "P" to manage them with SAP Landscape Management Cloud. Use the checkboxes next to the "Name" column.  
 7. Afterwards, select `Actions > Manage Systems` at the top right of the table.
-8. Click on the `+` next to the drop down of the new pop-up to create a System Group with the name "Production".
-9. Afterwards, select that newly created System Group in the drop down list and select `Manage Systems`.
+8. Click on the `+` next to the drop-down of the new pop-up to create a system group with the name "Production".
+9. Afterwards, select that newly created system group in the drop down list and select `Manage Systems`.
 
-The selected systems will disappear from the table after a short while. These systems are now elevated to the "managed" state within SAP Landscape Management Cloud and will be listed in the area "Managed Systems". 
+The selected systems will disappear from the table after a short while. Now these systems are elevated to the "managed" state within SAP Landscape Management Cloud and will be listed in the area "Managed Systems". 
 
-Repeat steps 6 - 9 for all systems starting with the letter "A" by creating a System Group "QA" and for all systems starting with the letter "D" by creating a System Group "Development". Only two systems starting with "S" should remain in the list inside "Discovery Portal". 
+Repeat steps 6 - 9 for all systems starting with the letter "A" by creating a system group "QA" and for all systems starting with the letter "D" by creating a system group "Development". 
 
 ## Exercise 1.2 Elevate system management to "Advanced usage" for the full functionality
 
@@ -39,7 +39,7 @@ Now you can make use of the information inside the dashboard of the "Home" scree
 3. The view is split up by cloud provider in case you have onboarded more than one provider account. 
 4. To the right, you can see that there is no estimated savings yet as systems run 24 hours, 7 days a week. 
 
-When deploying SAP systems on infrastructure-as-a-service, you can save money by stopping systems or by scaling them in and thus releasing virtutal machines. Let's do that by manually shutting down the development systems.
+When deploying SAP systems on infrastructure-as-a-service, you can save money by stopping systems or by scaling them in and thus releasing virtual machines. Let's do that by manually shutting down the development systems.
 
 5. Navigate to `Landscape Management > Operations`. 
 6. Select both systems in the "Development" system group.
@@ -51,11 +51,11 @@ This will stop the two development systems and unused resources can be freed up.
 9. Select `Landscape Management > Activities History` to follow its progress. 
 10. Expand this view by selecting the `>` arrow below the column header "Status".
 
-The upside is that you now save virtual money as you manually stopped two systems. Though starting these systems might take some time and it's not a task you want to perform at the start of Monday. Nobody can drink so much coffee during the time it might take. This optimization is due in the next task.
+The upside is that you save virtual money as you manually stopped two systems. Though starting these systems might take some time and it's not a task you want to perform at the start of Monday. Nobody can drink so much coffee during the time it might take. This optimization is due in the next task.
 
 ## Summary
 
-🎉 Congratulations! You've now added SAP systems to actively manage them with SAP Landscape Management Cloud. Though starting and stopping systems is no rocket science and requires manual intervention. It's not considered as saving money because only repetitive and automated tasks really unlock this potential.
+🎉 Congratulations! You've added SAP systems to actively manage them with SAP Landscape Management Cloud. Though starting and stopping systems is no rocket science and requires manual intervention. It's not considered as saving money because only repetitive and automated tasks really unlock this potential.
 
 Continue to - [Exercise 2 - Automate landscape activities and save infrastructure costs](../ex2/README.md)
 

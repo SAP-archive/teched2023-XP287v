@@ -20,7 +20,7 @@ After completing these steps you will have created a pattern to start and stop s
 12. As "Occurrence" click on `M, T, W, T, S, S` to unselect all days but Friday.
 13. At the end of the section, select `Create`.
 
-After creating the pattern "Development", select `...` at the right of the pre-existing pattern "Weekends Scaled In". This pattern will keep at least one application server instance alive, but will stop unused ones. The ABAP Central Services instance keeps running as well as all database instances.
+After creating the pattern "Development", select `>` at the right of the pre-existing pattern "Weekends Scaled In". This pattern will keep at least one application server instance alive, but will stop unused ones. The ABAP Central Services instance keeps running as well as all database instances.
 
 ## Exercise 2.2 Optimize system availability to save infrastructure cost
 
@@ -33,20 +33,20 @@ After completing these steps, you will have optimized system availability and yo
 5. Expand the drop down "New Pattern" and select `Development`. You can instantly see how much infrastructure cost you are estimated to save when stopping the development systems during the night and over the weekend. Furthermore, it's indicated how much energy is saved by applying the pattern. 
 6. Select `Apply` to activate this pattern.
 
-If some of the selected systems were in the status "Stopped", but should be in the status "Running" according to the selected pattern, they will now be started.
+If some of the selected systems were in the status "Stopped", but should be in the status "Running" according to the selected pattern, they will be started now.
 
-Now lets scale in the production systems on a regular basis:
+Now let's scale-in the production systems on a regular basis:
 1. Select the system group `Production` in the "Optimization" area. 
 2. In the section to the right, select the checkbox next to the table header "Status / Name" for selecting all systems in this group.
 3. At the top right, select `Operations > Apply Pattern`. 
-4.  Expand the drop down "New Pattern" and select `Weekends Scaled In`.
+4.  Expand the drop-down "New Pattern" and select `Weekends Scaled In`.
 5.  Move to the tab `Selected Entities` and expand both systems by selecting the `>` arrow next to their names.
 6.  For one of the two listed application servers, open the drop down and check the box next to `Scaled In (...)`. Don't select the patterns for both application servers as one needs to stay available. 
 7.  Repeat this step for one of the two application servers of the second system.
 8.  Navigating back to `Pattern Settings`, you can see a little savings in infrastructure costs.
 9.  Select `Apply` to close this pop-up.
 
-When you navigate back to `Home`, you can now see an overview of the estimated savings for your whole landscape managed with SAP Landscape Management Cloud.
+When you navigate back to `Home`, you can see an overview of the estimated savings for your whole landscape managed with SAP Landscape Management Cloud.
 
 ## Exercise 2.3 Analyze SAP landscape data in detail
 
@@ -72,6 +72,6 @@ Here is what you can find for these three dimensions. If you want to learn about
 
 ## Summary
 
-🎉 Congratulations! You've now applied patterns to system groups to reduce infrastructure cost and analyzed how much you can actually save. 
+🎉 Congratulations! You've applied patterns to system groups to reduce infrastructure cost and analyzed how much you can actually save. 
 
 Continue to - [Exercise 3 - Setup alerts for unforeseen situations](../ex3/README.md)

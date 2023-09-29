@@ -26,7 +26,7 @@ For following the tasks, no particular knowledge in any programming language is 
 
 ## Providing feedback and asking questions
 
-At any point in time when walking through the exercises, feel free to provide feedback and ask questions. You can use the GitHub Issues for any topic around this tutorial. For Product feedback, you can use the "Give Feedback" ![Give Feedback icon](/assets/give-feedback.png) icon inside SAP Landscape Management Cloud which is located at the top right of the shell bar. This will be reviewed by our product management and user experience experts.
+At any point in time when walking through the exercises, feel free to provide feedback and ask questions. You can use the GitHub Issues for any topic around this tutorial. For product feedback, you can use the "Give Feedback" ![Give Feedback icon](/assets/give-feedback.png) icon inside SAP Landscape Management Cloud which is located at the top right of the shell bar. This will be reviewed by our product management and user experience experts.
 
 ## Exercises
 

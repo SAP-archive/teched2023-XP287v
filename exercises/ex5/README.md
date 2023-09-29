@@ -25,6 +25,6 @@ If you have access to an instance of SAP Event Mesh, you can follow this [blog p
 
 ## Summary
 
-🎉 Congratulations! You've now understood why SAP Landscape Management Cloud provides event routing capabilities.
+🎉 Congratulations! You've understood why SAP Landscape Management Cloud provides event routing capabilities.
 
 Back to the overview - [SID 115558 - SAP System Management with SAP BTP and SAP Landscape Management Cloud](https://github.com/SAP-samples/teched2023-XP287v/tree/main)
