@@ -21,6 +21,7 @@ The requirements to follow the exercises in this repository are:
 - Having a free SAP-account which you can create at the top right via ![Account icon](/assets/account-icon.png) of [www.sap.com](https://www.sap.com)
 - Having a 30 day [free trial account of SAP Landscape Management Cloud](https://www.sap.com/products/technology-platform/landscape-management/trial.html) which takes around 5 minutes to provision
 - Having a 90 day [free trial account of SAP Business Technology Platform](https://www.sap.com/products/technology-platform/pricing.html) which takes around 5 minutes to provision
+- Having access to your email inbox.
 
 For following the tasks, no particular knowledge in any programming language is required. Scripts will use Python as programming language and deploy these within the SAP BTP, Cloud Foundry runtime, but you will be taken through the exercises step by step.
 

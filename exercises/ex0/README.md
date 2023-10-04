@@ -29,7 +29,31 @@ The trial tenant will open with a Guided Tour which you can skip. This will be p
 5. Complete the following wizard which might require you to enter your mobile number.
 6. As region, select "Singapore" on Microsoft Azure and wait for the wizard to finalize the setup of your SAP BTP trial account.
 
-TODO: What if I selected US and not Singapore
+In case you accidently didn't create the account in Singapore on Microsoft Azure, but in the United States, you need to delete the existing one and create a new one.
+
+1. In the "Account Explorer"" of the SAP BTP cockpit, select `...` of the subaccount's tile.
+2. Select `Delete`.
+3. Select the checkbox `I want to force delete this subaccount and all its data`.
+4. Select `Delete Subaccount and Data`.
+5. After its deletion, select `Create > Subaccount`.
+6. Provide a "Display Name", e.g. `Trial`. 
+7. Select as "Region" `Singapore`. 
+8. On the lest side, select `Entitlements > Entity Assignments`.
+9. In "Select Entities", select the icon to the right of the input field. 
+10. Select the checkbox next to the name of the created subaccount. 
+11. Select `Select`.
+12. Select `Configure Entitlements`.
+13. Select `Add Service Plans`.
+14. From the list of the left, select `Alert Notification` and afterwards the checkbox on the right side next to "standard". 
+15. On the left side, select `Cloud Foundry Runtime` and afterwards the checkbox on the right side next to "MEMORY".
+16. Select `Add 2 Service Plans`.
+17. Select `Save`. 
+18. On the left side, select `Account Explorer`.
+19. Select the created subaccount, e.g. "Trial".
+20. Select `Enable Cloud Foundry`.
+21. Select `Create`. 
+22. After the creation is done, on the right side, select `Create Space`. 
+23. Provide a "Name", e.g. "dev".
 
 ## Summary
 
