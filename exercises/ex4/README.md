@@ -89,8 +89,8 @@ After the deployment is finished, you need to create an external route so that y
 
 After following these steps, you can fetch a list of managed SAP systems in a browser window via the REST API endpoints of SAP Landscape Management Cloud.
 
-1. Try out the externally exposed app. Replace the placeholder <HostName> with the host name you picked in Exercise 4.4 (e.g. “myapp-<yourname>”) in following url: [https://<HostName>.cfapps.ap21.hana.ondemand.com](https://<HostName>.cfapps.ap21.hana.ondemand.com). When you then click on the url you should see “Hello, World!”
-2. Try fetching all managed systems by opening [https://<HostName>.cfapps.ap21.hana.ondemand.com/api/v1/systems](https://<HostName>.cfapps.ap21.hana.ondemand.com/api/v1/systems).
+1. Try out the externally exposed app. Replace the placeholder <HostName> with the host name you picked in Exercise 4.4 (e.g. “myapp-<yourname>”) in following url: https://**<HostName picked in exercise 4.4>**.cfapps.ap21.hana.ondemand.com. When you then click on the url you should see “Hello, World!”
+2. Try fetching all managed systems by opening https://**<HostName picked in exercise 4.4>**.cfapps.ap21.hana.ondemand.com/api/v1/systems.
 
 This will list the GET call to your tenant of SAP Landscape Management Cloud.
 
