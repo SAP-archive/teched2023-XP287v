@@ -62,7 +62,7 @@ Now you can see your created binding in the table. When you select the entry you
 
 After completing these steps, SAP Landscape Management Cloud will be able to send events to SAP Alert Notification Service. You will use the [integration with CloudEvents Publishers](https://help.sap.com/docs/alert-notification/sap-alert-notification-for-sap-btp/integrating-with-cloudevents-publishers?locale=en-US) provided by SAP Alert Notification Service.
 
-1. Inside SAP Landscape Managemnet Cloud, select `Event Routing` in the left navigation.
+1. Inside SAP Landscape Management Cloud, select `Event Routing` in the left navigation.
 2. Select the `Create` button.
 3. In the area which opens at the right, provide an "Event Broker Name" like "Alert Notifications".
 4. In the drop down list "Event Broker Type", select `SAP Alert Notification Service`.
