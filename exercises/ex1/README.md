@@ -15,8 +15,8 @@ After completing these steps you will have added SAP solutions to the active man
 5. Selecting `>` at the right of a line item shows even more details of a system to the right.
 6. Now select all discovered systems whose name starts with a "P" to manage them with SAP Landscape Management Cloud. Use the checkboxes next to the "Name" column.  
 7. Afterwards, select `Actions > Manage Systems` at the top right of the table.
-8. Click on the `+` next to the drop-down of the new pop-up to create a system group with the name "Production".
-9. Afterwards, select that newly created system group in the drop down list and select `Manage Systems`.
+8. Click on the `+` next to the dropdown of the new pop-up to create a system group with the name "Production".
+9. Afterwards, select that newly created system group in the dropdown list and select `Manage Systems`.
 
 The selected systems will disappear from the table after a short while. Now these systems are elevated to the "managed" state within SAP Landscape Management Cloud and will be listed in the area "Managed Systems". 
 

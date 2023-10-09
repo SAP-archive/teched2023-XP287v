@@ -65,8 +65,8 @@ After completing these steps, SAP Landscape Management Cloud will be able to sen
 1. Inside SAP Landscape Management Cloud, select `Event Routing` in the left navigation.
 2. Select the `Create` button.
 3. In the area which opens at the right, provide an "Event Broker Name" like "Alert Notifications".
-4. In the drop down list "Event Broker Type", select `SAP Alert Notification Service`.
-5. Use the `Import` button next to "Credentials File" and upload the *.txt file you downloaded in step 14 of exercise 3.2.
+4. In the dropdown list "Event Broker Type", select `SAP Alert Notification Service`.
+5. Use the `Import` button next to "Credentials File" and upload the *.txt or *.json file you downloaded in step 14 of exercise 3.2.
 6. Append the following to the provided content of the "API URL" field:
 
 ```
@@ -83,14 +83,14 @@ https://cf-eu10.cfapps.sap.hana.ondemand.com/cf/producer/v1/resource-events?sche
 8. Select `Create` at the bottom right of the screen.
 
 
-## Exercise 3.4 Configure actions and conditions for e-mail alerts
+## Exercise 3.4 Configure actions and conditions for email alerts
 
 At the end of this section, "System Stop"-activities in SAP Landscape Management Cloud will trigger an email to your inbox via SAP Alert Notification.
 
 1. Open your SAP BTP trial account.
 2. Select the subsccount.
-3. On the left, select `Instances and Subscriptions`.
-4. In the table "Instances", select the "Instace" name of SAP Alert Notification service, e.g. called "ansforlama". This will open the user interface in a new browser tab.
+3. On the left, select `Services > Instances and Subscriptions`.
+4. In the table "Instances", select the "Instance" name of SAP Alert Notification service, e.g. called "ansforlama". This will open the user interface in a new browser tab.
 
 ### Exercise 3.4.1 Create an Action
 
@@ -100,7 +100,7 @@ At the end of this section, you have configured SAP Alert Notification service t
 2. Select `Create`.
 3. Select `Email` as "Action Type".
 4. Select `Next`.
-5. Provide any value as "Name".
+5. Provide any value as "Name", e.g. "SendEmailAction".
 6. Provide your email address in the field "Email Address".
 7. Provide any email subject for "Subject Template", e.g. "ANS for LaMa".
 8. In the "Payload Template" field, paste the following for receiving the event payload via email
@@ -124,22 +124,24 @@ At the end of this section, you have created the condition for receiving an emai
 2. Select `Create`.
 3. Provide any "Name", e.g. "StopService".
 4. As "Condition", select `eventType`. Even though the header field inside the payload of the [CloudEvent emitted by SAP Landscape Management Cloud](https://api.sap.com/event/OperationEvents/resource) is called "type", [the field is mapped](https://help.sap.com/docs/alert-notification/sap-alert-notification-for-sap-btp/integrating-with-cloudevents-publishers?locale=en-US#context) by SAP Alert Notification service to "eventType".
-5. Ensure that the selected value of the drop-down list in the middle is `Contains`.
+5. Ensure that the selected value of the dropdown list in the middle is `Contains`.
 6. As "Expected value..." provide `STOPSERVICE`.
 7. Select `Create` at the bottom of the page.
 
 ### Exercise 3.4.3 Create a Subscription
 
-At the end of this section, you have joint the condition with the action to trigger email actions when the condition is met.
+At the end of this section, you have joined the condition with the action to trigger email actions when the condition is met.
 
 1. Select `Subscriptions` on the left side.
 2. Select `Create`. 
-3. Provide a "Name", e.g. "My Alert".
+3. Provide a "Name", e.g. "MyAlert".
 4. Select `Create`.
-5. Select the checkbox next to the activity you created, e.g. "ANS for LaMa".
-6. Select the condition you created, e.g. "StopService".
+5. Select the checkbox next to the condition you created, e.g. "StopService".
+6. Select the condition in the "Selected Conditions" field, e.g. "Contains STOPSERVICE".
 7. Select `Assign`.
-8. Select `Close`. 
+8. Check the checkbox next to the available Action you created, e.g. "SendEmailAction".
+9. Select `Assign`.
+10. Select `Close`. 
 
 You will now see the newly created subscription in the tiles.
 
@@ -159,6 +161,6 @@ This will stop the particular system and trigger the business event "STOPSERVICE
 
 ## Summary
 
-🎉 Congratulations! Now you've have setup alerts for a particular situation in your SAP system landscape.
+🎉 Congratulations! Now you have setup alerts for a particular situation in your SAP system landscape.
 
 Continue to - [Exercise 4 - Create scripts to trigger landscape management tasks](../ex4/README.md)

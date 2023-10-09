@@ -29,31 +29,41 @@ The trial tenant will open with a Guided Tour which you can skip. This will be p
 5. Complete the following wizard which might require you to enter your mobile number.
 6. As region, select "Singapore" on Microsoft Azure and wait for the wizard to finalize the setup of your SAP BTP trial account.
 
-In case you accidently didn't create the account in Singapore on Microsoft Azure, but in the United States, you need to delete the existing one and create a new one.
+<details>
+  <summary>In case you accidently didn't create the account in Singapore on Microsoft Azure, but in the United States, you need to delete the existing one and create a new one.</summary>
+<p>
+<ol>
+<li>Open your <a href="https://account.hanatrial.ondemand.com/trial/#/home/trial" target="_new">SAP BTP Trial account</a>.</li>
+<li>Select <code>Go To Your Trial Account</code>.</li>
+<li>In the "Account Explorer" of the SAP BTP cockpit, select <code>...</code> of the subaccount's tile.</li>
+<li>Select <code>Delete</code>.</li>
+<li>Select the checkbox <code>I want to force delete this subaccount and all its data</code>.</li>
+<li>Select <code>Delete Subaccount and Data</code>.</li>
+<li>After its deletion, select <code>Create > Subaccount</code>.</li>
+<li>Provide a "Display Name", e.g. <code>Trial</code>. </li>
+<li>Select as "Region" <code>Singapore</code>. </li>
+<li>Select <code>Create</code>. </li>
+<li>On the left side, select <code>Entitlements > Entity Assignments</code>.</li>
+<li>In "Select Entities", select the icon to the right of the input field. </li>
+<li>Select the checkbox next to the name of the created subaccount. </li>
+<li>Select <code>Select</code>.</li>
+<li>Select <code>Configure Entitlements</code>.</li>
+<li>Select <code>Add Service Plans</code>.</li>
+<li>From the list of the left, select <code>Alert Notification</code> and afterwards the checkbox on the right side next to "standard". </li>
+<li>On the left side, select <code>Cloud Foundry Runtime</code> and afterwards the checkbox on the right side next to "MEMORY".</li>
+<li>Select <code>Add 2 Service Plans</code>.</li>
+<li>Select <code>Save</code>. </li>
+<li>On the left side, select <code>Account Explorer</code>.</li>
+<li>Select the created subaccount, e.g. "Trial".</li>
+<li>Select <code>Enable Cloud Foundry</code>.</li>
+<li>Select <code>Create</code>. </li>
+<li>After the creation is done, on the right side, select <code>Create Space</code>. </li>
+<li>Provide a "Space Name", e.g. "dev".</li>
+<li>Select <code>Create</code>.</li>
+</ol>
 
-1. In the "Account Explorer"" of the SAP BTP cockpit, select `...` of the subaccount's tile.
-2. Select `Delete`.
-3. Select the checkbox `I want to force delete this subaccount and all its data`.
-4. Select `Delete Subaccount and Data`.
-5. After its deletion, select `Create > Subaccount`.
-6. Provide a "Display Name", e.g. `Trial`. 
-7. Select as "Region" `Singapore`. 
-8. On the lest side, select `Entitlements > Entity Assignments`.
-9. In "Select Entities", select the icon to the right of the input field. 
-10. Select the checkbox next to the name of the created subaccount. 
-11. Select `Select`.
-12. Select `Configure Entitlements`.
-13. Select `Add Service Plans`.
-14. From the list of the left, select `Alert Notification` and afterwards the checkbox on the right side next to "standard". 
-15. On the left side, select `Cloud Foundry Runtime` and afterwards the checkbox on the right side next to "MEMORY".
-16. Select `Add 2 Service Plans`.
-17. Select `Save`. 
-18. On the left side, select `Account Explorer`.
-19. Select the created subaccount, e.g. "Trial".
-20. Select `Enable Cloud Foundry`.
-21. Select `Create`. 
-22. After the creation is done, on the right side, select `Create Space`. 
-23. Provide a "Name", e.g. "dev".
+  </p>
+</details>
 
 ## Summary
 

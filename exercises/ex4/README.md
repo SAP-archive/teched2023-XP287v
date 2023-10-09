@@ -83,7 +83,7 @@ After the deployment is finished, you need to create an external route so that y
 12. Pick any host name, e.g. `myapp-<yourname>` and keep the "Path" field empty.
 13. Select `Save`. 
 14. At the "Actions" column, select `Map Route`.
-15. In the drop-down list, select your app and select `Save`. 
+15. In the dropdown list, select your app and select `Save`. 
 
 ## Exercise 4.5 Try it out
 

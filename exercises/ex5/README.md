@@ -20,7 +20,9 @@ This speeds up the process execution as no API polling in a given time frame has
 
 ## Exercise 5.3 Trying it out in case you have access to SAP Event Mesh
 
-If you have access to an instance of SAP Event Mesh, you can follow this [blog post](https://blogs.sap.com/2023/07/10/sap-landscape-management-cloud-lama-cloud-event-routing-and-posting-to-ms-teams/) for trying it out yourself. 
+If you have access to an instance of SAP Event Mesh, you can follow this [blog post](https://blogs.sap.com/2023/07/10/sap-landscape-management-cloud-lama-cloud-event-routing-and-posting-to-ms-teams/) for trying it out yourself. In case you noticed within the introduction to [Exercise 3 - Setup alerts for unforeseen situations](../ex3/README.md), SAP Alert Notification can send alerts to Microsoft Teams and this blog post describes how you can trigger messages to Microsoft Teams as well. Both routes are a valid option and depending on your use case, might come in handy.
+
+If you only want to trigger alerts to users, going via SAP Alert Notification might be the straight forward path. If you have scripts in place which trigger follow-up actions **and** should send a message to Microsoft Teams, following the instructions of the blog post might make more sense. 
 
 
 ## Summary
