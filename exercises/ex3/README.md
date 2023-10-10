@@ -67,20 +67,8 @@ After completing these steps, SAP Landscape Management Cloud will be able to sen
 3. In the area which opens at the right, provide an "Event Broker Name" like "Alert Notifications".
 4. In the dropdown list "Event Broker Type", select `SAP Alert Notification Service`.
 5. Use the `Import` button next to "Credentials File" and upload the *.txt or *.json file you downloaded in step 14 of exercise 3.2.
-6. Append the following to the provided content of the "API URL" field:
-
-```
-/cf/producer/v1/resource-events?schema_definition=cloud_events&version=1.0
-```
-
-The API URL should look similar to 
-
-```
-https://cf-eu10.cfapps.sap.hana.ondemand.com/cf/producer/v1/resource-events?schema_definition=cloud_events&version=1.0
-```
-
-7. Ensure that "Activate Event Broker" is set to active.
-8. Select `Create` at the bottom right of the screen.
+6. Ensure that "Activate Event Broker" is set to active.
+7. Select `Create` at the bottom right of the screen.
 
 
 ## Exercise 3.4 Configure actions and conditions for email alerts
