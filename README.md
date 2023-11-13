@@ -8,7 +8,7 @@
 
 This repository contains the material for the SAP TechEd 2023 session called SID 115558 - "SAP System Management with SAP BTP and SAP Landscape Management Cloud".
 
-<iframe src="https://dam.sap.com/mac/embed/public/vp/a/W1Xcdn2.htm?rc=10&includeSapBrandedWraper=true" frameborder="0" width="600" height="350" allowfullscreen>
+
 
 ## Overview
 
