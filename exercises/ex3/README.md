@@ -16,12 +16,7 @@ Review the available [SAP Landscape Management Cloud operation events](https://a
 
 1. Select `Operations Events`.
 2. Select the tab `Event References`.
-3. You can find the three available business events at the left side. All refer to an activity triggered within SAP Landscape Management Cloud:
-
-   - "ce/sap/lmc/Activity/STARTSERVICE/v1": A system is being started.
-   - "ce/sap/lmc/Activity/STOPSERVICE/v1": A system is being stopped. 
-   - "ce/sap/lmc/Activity/DISCOVERY/v1": SAP Landscape Management Cloud checks the Hyperscaler accounts for new systems to manage.
-
+3. You can find the three available business events at the left side. All refer to an activity triggered within SAP Landscape Management Cloud.
 4. Expand the `Payload` area in the grey box to find the information which is sent with each event. Besides the "activityId" for a later use in combination with the REST API endpoints, the "status" field is very relevant. This indicates if the respective activity has just started **executing**, **successfull**y finished, or **failed**.
 
 ## Exercise 3.2 Create an instance of SAP Alert Notification Service
@@ -113,7 +108,7 @@ At the end of this section, you have created the condition for receiving an emai
 3. Provide any "Name", e.g. "StopService".
 4. As "Condition", select `eventType`. Even though the header field inside the payload of the [CloudEvent emitted by SAP Landscape Management Cloud](https://api.sap.com/event/OperationEvents/resource) is called "type", [the field is mapped](https://help.sap.com/docs/alert-notification/sap-alert-notification-for-sap-btp/integrating-with-cloudevents-publishers?locale=en-US#context) by SAP Alert Notification service to "eventType".
 5. Ensure that the selected value of the dropdown list in the middle is `Contains`.
-6. As "Expected value..." provide `STOPSERVICE`.
+6. As "Expected value..." provide `STOPSYSTEM`.
 7. Select `Create` at the bottom of the page.
 
 ### Exercise 3.4.3 Create a Subscription
@@ -124,8 +119,8 @@ At the end of this section, you have joined the condition with the action to tri
 2. Select `Create`. 
 3. Provide a "Name", e.g. "MyAlert".
 4. Select `Create`.
-5. Select the checkbox next to the condition you created, e.g. "StopService".
-6. Select the condition in the "Selected Conditions" field, e.g. "Contains STOPSERVICE".
+5. Select the checkbox next to the condition you created, e.g. "StopSystem".
+6. Select the condition in the "Selected Conditions" field, e.g. "Contains STOPSYSTEM".
 7. Select `Assign`.
 8. Check the checkbox next to the available Action you created, e.g. "SendEmailAction".
 9. Select `Assign`.
@@ -140,12 +135,12 @@ At the end of this section, you will have received an email when stopping a syst
 1. Open your trial account of SAP Landscape Management Cloud.
 2. On the left, select `Operations`.
 3. For any system listed in the "Systems" table which has a green ✅ next to its name, select `...` on the right side of the line item.
-4.  Select `Instance Operations`.
+4.  Select `Operations`.
 5.  Select `Stop`.
 6.  Select `Next Step`.
 7.  Select `Perform Operation`.
 
-This will stop the particular system and trigger the business event "STOPSERVICE" which will trigger the configured alert. 
+This will stop the particular system and trigger the business event "STOPSYSTEM" which will trigger the configured alert. 
 
 ## Summary
 
